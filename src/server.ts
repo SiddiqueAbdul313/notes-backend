@@ -8,9 +8,7 @@ mongoose
   .then(() => {
     console.log("Mongoose connected");
     app.listen(port, () => {
-      console.log(
-        `Server started successfully on port http://localhost:${port}`
-      );
+      console.log(`Server started successfully on port http://0.0.0.0:${port}`);
     });
   })
   .catch(console.error);
